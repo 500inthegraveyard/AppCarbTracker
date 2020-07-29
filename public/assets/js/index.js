@@ -80,17 +80,12 @@ const getRestaurant = () => {
 $analyzeBtn.on("click",function(){
   var nutrition=$("#analyzeInput").val();
   var meal = $("#mealBox").val();
-<<<<<<< HEAD
   var restaurantId = $("#mySelect option:selected").attr("id");  
   console.log("foonut", nutrition);
   console.log("meal", meal);
   console.log("resname", restaurantId);
   return $.ajax({
     url: "/api/nutrition/" + nutrition + "/"+ meal + "/" + restaurantId,
-=======
-  return $.ajax({
-    url: "/api/nutrition/" + nutrition + "/"+ meal,
->>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
     method: "GET",
   })
   // When API call comes back from the backend 

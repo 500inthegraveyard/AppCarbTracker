@@ -22,11 +22,7 @@ const getRestaurant = () => {
       var selectElem =$("#mySelect");
       $.each(restaurantName, function(index, value){
         $("<option/>", {
-<<<<<<< HEAD
           id: value.id,
-=======
-          id: index,
->>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
           text: value.name
         })
         .appendTo(selectElem);

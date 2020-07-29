@@ -1,5 +1,5 @@
 var db = require("../models");
-const restaurant = require("../models/restaurant");
+// const restaurant = require("../models/restaurant");
 
 // ────────────────────────────────────────────── GET ALL RESTAURANTS FROM DB ─────
 module.exports = function(app) {

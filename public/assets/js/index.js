@@ -28,50 +28,19 @@ const getRestaurant = () => {
         .appendTo(selectElem);
     });
     });
-
-// const getRestaurant = () => {
-//   return $.ajax({
-//     url: "/api/restaurant",
-//     method: "GET",
-//   })
-
-//   .then((response)=>{
-//   Object.values(response).forEach(value=>{
-  
-
-//    // ────────────────────────────────────────────────────────────────────────────────
-
-  
-//     $.each(response, function(name,value) {
-//       // $.each(this, function(name,value) {
-//           console.log(`${name} = ${value}`);
-
-//           $restName.append($('<option></option>').val(name).html(value));
-
-//         });
-     
-
-// ────────────────────────────────────────────────────────────────────────────────
-
   });
-  
-
-  // $("#viewBy").append(value.name);
-// ────────────────────────────────────────────────────────────────────────────────
-
-//    
-//   });
-// // ─────────────────────────────────────────────────────────────────
-// this.$('select#viewBy').append('<option>response</option>');
-
-
-
-    
  };
 
 
-  
-  // });
+ const getSavedRestaurant = () => {
+  return $.ajax({
+    url: "/api/savedrestaurant",
+    method: "GET",
+  });
+}
+
+
+
 
 $analyzeBtn.on("click",function(){
   var nutrition=$("#analyzeInput").val();
@@ -166,5 +135,6 @@ $analyzeBtn.on("click",function(){
 // // ────────────────────────────────────────────────────────────────────────────────
 
 getRestaurant();
+getSavedRestaurant();
 
 

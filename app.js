@@ -23,6 +23,8 @@ app.use(express.static(path.join(__dirname, "db")));
 // require("./routes/html-routes.js")(app);
 require("./routes/restaurant-api-route.js")(app);
 require("./routes/food-api-route.js")(app);
+require("./routes/saved-restaurant-api.js")(app);
+
 
 
 app.get("/", function (req, res) {

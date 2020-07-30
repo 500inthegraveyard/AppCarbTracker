@@ -67,38 +67,3 @@ function getFood(foodArray){
 
 
 
-
-
-
-//       .then(Food => {
-//         const resObj = Food.map(user => {
-//             return Object.assign(
-//                 {},{
-//                   name: Restaurant.name.map(food =>{
-//                       return Object.assign(
-//                           {},{
-//                               meal:Food.meal,
-//                               netCarbs: Food.netCarbs
-//                           }
-//                       )
-//                   })  
-//                 }
-//             )
-//         });
-      
-//     //   .then(function(results) {
-//     //     res.json(results);
-//     //   })
-//     //   .catch(function(err){
-//     //       res.json(err);
-//     //   });
-//     // });
-//       });
-
-// // app.get("/", function(req, res) {
-// //     res.send("App works!!");
-// // });
-
-// include: [{
-//     model: db.Food,
-// }]

@@ -36,7 +36,27 @@ const getRestaurant = () => {
   return $.ajax({
     url: "/api/savedrestaurant",
     method: "GET",
+  })
+  .then((response)=>{
+    $(document).ready(function(){
+      var x, txt ="";
+      var savedfood = response;
+      for (x in savedfood){
+        txt +=savedfood[x] + " ";
+      }
+      var selectElem =$("#myData");
+      $.each(savedfood, function(index, value){
+        $("<option/>", {
+          id: value.id,
+          text: value.name
+        })
+        .appendTo(selectElem);
+        console.log("SaveData", response)
+    });
+    });
   });
+
+
 }
 
 

@@ -48,7 +48,7 @@ const getRestaurant = () => {
       $.each(savedfood, function(index, value){
         $("<option/>", {
           id: value.id,
-          text: "Restaurant_Name: " + " "+value.name +" "+" Meal_name: " + value.food[0].meal + " "+"Net_Carbs: " +" "+ value.food[0].netCarbs +"(g)"
+          text:  "Restaurant_Name: " + " "+value.name +" "+" Meal_name: " + value.food[0].meal + " "+"Net_Carbs: " +" "+ value.food[0].netCarbs +"(g)"
         })
         .appendTo(selectElem);
         console.log("SaveData", response)

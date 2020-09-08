@@ -1,35 +1,24 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
-# Scot_Avi_CarbTracker
-get all the restaurants--names, id --- sort them alphabetically
- fetch(api/restaurants)
- => my server processes this
- => direct to db.Restaurants.findAll({order:[
-     ['name', 'ASC || DESC']
- ]})
-=> data in the form of an array
 
-loop over data to create a drop down (selectors)
-    <option value=${restarant.name} data-rest-id=${restaruant.id}>
+## Link to Live Application
+https://appcarbtracker.herokuapp.com/
 
 
-**** ALREADY COMPLETED BELOW ****
-i select one and fill out the rest of form
-fetch(post, /api/restuarants)
-    db.Food.create(req.body).then(function(data) {
-        yay we were succesful
-    }).catch(function(err) {
-        boo your insert failed.
-    });
-=======
-# AppCarbTracker
->>>>>>> 2a08b410f623985dd6ec9cd4c0e23c758ec77e49
-<<<<<<< HEAD
-=======
-# NameIdAppCarbTracker
->>>>>>> b00bc7a47bbc0b2826f5fef974a241618e8aa740
-=======
->>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
+## Application Purpose
+This application is meant for diabetics and health conscious people who want to keep track of carbohydrate intake. But going to restaurants the meals don't always have nutrition facts with carb amounts. With this app the user can quickly calculate the carb amount of any meal. Tools used: Edamam API, Node, Bootstrap, Express, SQL, HTML5, CSS3
+
+## Start Application
+
+In the project directory, you can run:
+### `npm i`
+and then run
+### `npm start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+
+## Screenshot
+![Alt text](Screenshot4CarbTracker.JPG "screenshot")

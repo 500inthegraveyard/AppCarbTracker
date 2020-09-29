@@ -14,25 +14,18 @@
    /* padding-top: 150px; */
   }
    .container{
-     padding-bottom: 150px;
+     /* padding-bottom: 150px; */
   }
   </style>
-<body style="background-color: bisque;">
+<body style="background-color:black;">
   <!-- <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="/">Food Tracker
     </a>
   </nav> -->
   <div class="container" style="background-image: url(./assets/css/food.webp);height:100%;width: 100%;" >
-    <div style="margin-top: 50px;" class="jumbotron text-center">
+    <div style="margin-top: 0px;" class="jumbotron text-center">
       <h1 class="display-4" style=" font-size:64px ; color:rgb(125, 187, 10); text-shadow:2px 2px 2px ;" > <span role="img" aria-label="Memo">
       </span></h1>
-      <div class="input-group input-group-sm mb-3">
-        <div class="input-group-prepend">
-        </div>
-        <input type="text" class="form-control" id="restaurantBox" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter name to create a restaurant">
-      </div>
-<!-- ──────────────────────────────────────────────────────────────────────────────── -->
-<!-- ──────────────────────────────────────────────────────────────────────────────── -->
       <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
         <select id = "mySelect"class="browser-default custom-select">
@@ -43,6 +36,19 @@
         </div>
         <!-- <input type="text" class="form-control" id="restaurantBox" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"> -->
       </div>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+        </div>
+        <input type="text" class="form-control" id="restaurantBox" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter name to create a restaurant">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+        </div>
+        <input type="text" class="form-control" id="restaurantBox" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter starting blood sugar">
+      </div>
+<!-- ──────────────────────────────────────────────────────────────────────────────── -->
+<!-- ──────────────────────────────────────────────────────────────────────────────── -->
+      
       <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
           <!-- <span class="input-group-text" id="inputGroup-sizing-sm" placeholder="meal-name"></span> -->
@@ -72,7 +78,7 @@
       </div>
     </div>
   </div>
-  <div id="myData" style="text-align:center;"></div> 
+  <!-- <div id="myData" style="text-align:center;"></div>  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/assets/js/index.js"></script>
 </body>
